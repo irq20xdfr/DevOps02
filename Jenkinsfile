@@ -4,7 +4,8 @@ pipeline {
     stage('Instanciando') {
       steps {
         echo 'Iniciando proceso'
-        sh 'uname -a'
+        sh '''uname -a
+php -v'''
       }
     }
 
